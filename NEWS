@@ -1,0 +1,4 @@
+0.1: initial release
+
+0.2: oops, I accidentally left in the debug test renaming EPSV to EPSK
+to see if PASV works, thus disabling IPv6 FTP.

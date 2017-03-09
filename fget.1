@@ -1,0 +1,29 @@
+.TH fget 1 "August 2000"
+.SH NAME
+.PP
+fget \- fetch an HTTP/FTP URL
+.SH SYNOPSIS
+.PP
+.B fget
+url
+.SH DESCRIPTION
+.PP
+fget downloads a single HTTP or FTP URL and outputs the file on stdout.
+
+fget support IPv4 and IPv6 (use http://[::1]:80/file) to specify IPv6
+IPs and can be compiled without DNS support for minimum size.
+
+fget detects and understands the \fBhttp_proxy\fR and \fBftp_proxy\fR
+environment variables.
+
+Use the INTERFACE environment variable to specify the name of the
+network interface (e.h. "eth0") when you use link-local IPv6 addresses.
+
+.SH BUGS
+fget will produce no output on error, it will just exit nonzero
+silently.
+.SH SEE ALSO
+.BR wget(1),
+.BR curl(1)
+.SH AUTHOR
+Felix 'Fefe' von Leitner <felix@fefe.de>
